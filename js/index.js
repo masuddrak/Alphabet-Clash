@@ -1,6 +1,12 @@
+
+
+function gameControl(){
+    const randomAlph=document.getElementById("random_later")
+    randomAlph.innerText=getRandomAlpha()
+    setBackgroundColor(getRandomAlpha())
+}
 function palyNow() {
-    const homeScren=document.getElementById("home")
-    homeScren.classList.add("hidden")
-    const secontScren=document.getElementById("secont_page")
-    secontScren.classList.remove("hidden")
+    hidScreen("home")
+    sowScreen("secont_page")
+    gameControl()
 }
